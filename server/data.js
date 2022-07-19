@@ -1,0 +1,68 @@
+import bcrypt from "bcryptjs";
+
+export const dataMerce = {
+  users: [
+    {
+      name: "Chichebe",
+      email: "chichebewebdev@gmail.com",
+      password: bcrypt.hashSync("1234"),
+      isAdmin: true,
+    },
+    {
+      name: "Sunday",
+      email: "sunny@gmail.com",
+      password: bcrypt.hashSync("1234"),
+      isAdmin: false,
+    },
+  ],
+  products: [
+    {
+      name: "Nike Slim Shirt",
+      slug: "nike-slim-shirt",
+      category: "Shirts",
+      image: "/images/t-shirt-1.png",
+      price: 150,
+      countInStock: 10,
+      brand: "Nike",
+      rating: 4.7,
+      numOfReviews: 12,
+      desc: "high quality shirt",
+    },
+    {
+      name: "Adidas Fit Shirt",
+      slug: "adidas-fit-shirt",
+      category: "Shirts",
+      image: "/images/t-shirt-2.png",
+      price: 200,
+      countInStock: 15,
+      brand: "Adidas",
+      rating: 4.0,
+      numOfReviews: 10,
+      desc: "high quality fit shirt",
+    },
+    {
+      name: "Nike Slim Pant",
+      slug: "nike-slim-pant",
+      category: "Pants",
+      image: "/images/t-shirt-3.jpg",
+      price: 300,
+      countInStock: 30,
+      brand: "Nike",
+      rating: 4.1,
+      numOfReviews: 8,
+      desc: "high quality pant",
+    },
+    {
+      name: "Adidas Fit Pant",
+      slug: "adidas-fit-pant",
+      category: "Pants",
+      image: "/images/t-shirt-4.jpg",
+      price: 250,
+      countInStock: 7,
+      brand: "Adidas",
+      rating: 5.0,
+      numOfReviews: 17,
+      desc: "high quality pant",
+    },
+  ],
+};
